@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Card template Css scripts-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../../../favicon.ico">
+
+        <title>Jumbotron Template for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+        <!-- Navigation bar -->
+        <link href="jumbotron.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Entertainment Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Shows</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Games</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login" target="_blank">Login</a>
+                    </li>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <main role="main">
+
+            <!-- Main banner show description -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">Entertainment Hub</h1>
+                    <p>Get breaking news from the UK entertainment industry to learn about new bands, rising stars, the next blockbuster and the hottest shows on television.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                </div>
+            </div>
+
+            <!--Main Cards-->
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+            <link href="../static/content/cardesign.css" rel="stylesheet" type="text/css">
+
+            <div class="container">
+                <h3 class="pb-3 mb-4 font-italic border-bottom">
+                    Trending
+                </h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-dark" href="world">{{getheadlineTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-muted small">{{getheadlinePublishedAt}}</div>
+                                <p class="card-text mb-auto">{{getheadlineDescription}}</p>
+                                <a class="btn btn-outline-primary btn-sm" role="button" href="world">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{getheadlinetoImage}} style="width: 200px; height: 250px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-success">Tech</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-dark" href="tech">{{gettechTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-muted small">{{gettechPublishedAt}}</div>
+                                <p class="card-text mb-auto">{{gettechDescription}}</p>
+                                <a class="btn btn-outline-success btn-sm" href="tech">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{gettechImg}} style="width: 200px; height: 250px;">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-primary flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-primary">Sports</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-dark" href="sports">{{getsportsTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-muted small">{{getsportsPublishedAt}}</div>
+                                <p class="card-text mb-auto">{{getsportsDescription}}</p>
+                                <a class="btn btn-outline-primary btn-sm" role="button" href="sports">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{getsportsImg}} style="width: 200px; height: 250px;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="card border-success flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-success">Entertainment</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-dark" href="entertainment">{{getentTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-muted small">{{getentPublishedAt}}</div>
+                                <p class="card-text mb-auto">{{getentDescription}}</p>
+                                <a class="btn btn-outline-success btn-sm" href="entertainment">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{getentImg}} style="width: 200px; height: 250px;">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-white bg-primary flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-white">Business</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-white" href="business">{{getbusinessTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-white-50 small">{{getbusinessPublishedAt}}</div>
+                                <p class="card-text mb-auto">{{getbusinessDescription}}</p>
+                                <a class="btn btn-outline-light btn-sm" role="button" href="business">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{getbusinessImg}} style="width: 200px; height: 250px;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="card text-white bg-success flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-white">Mtv</strong>
+                                <h6 class="mb-0">
+                                    <a class="text-white" href="mtv">{{getmtvTitle}}</a>
+                                </h6>
+                                <div class="mb-1 text-white-50 small">{{getmtvPublishedAt}}</div>
+                                <p class="card-text mb-auto">{{getmtvDescription}}</p>
+                                <a class="btn btn-outline-light btn-sm" href="mtv">Continue reading</a>
+                            </div>
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src={{getmtvImg}} style="width: 300px; height: 250px;">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Two wider bottom cards-->
+                <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
+                    Cant Miss
+                </h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-4 bg-dark text-white">
+                            <img class="card-img" src={{getbuzfeedImg}} alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title" href="#">{{getBuzzfeedTitle}}</h5>
+                                <p class="card-text">{{getbuzzfeedDescription}}</p>
+                                <p class="card-text">{{getbuzzfeedPublished}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 bg-dark text-white">
+                            <img class="card-img" src="http://placeimg.com/250/180/nature/sepia" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">{{geredditTitle}}</h5>
+                                <p class="card-text">{{getredditDescrip}}.</p>
+                                <p class="card-text">{{getredditPublishedAt}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Dont dele below-->
+                <!-- Bootstrap core JavaScript
+    ================================================== -->
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+                <script src="../../assets/js/vendor/popper.min.js"></script>
+                <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
