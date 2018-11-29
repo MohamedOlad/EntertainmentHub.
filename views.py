@@ -108,7 +108,7 @@ def lowerCard_1():
 @app.route('/more2')
 def lowerCard_2():
 
-    """Renders the expandeds more detail in first lower card"""   
+    """Renders the expandeds more detail in first second card"""   
 
     return render_template('lowerCard2.html', redditLowerCardContent = Reddit.Reddit_Content, redditLowerCardTitle = Reddit.Reddit_Title, redditLowerCardImg = Reddit.Reddit_ToImage,
                            redditLowerCardDes = Reddit.Reddit_Description)
