@@ -96,3 +96,19 @@ def mtv():
     """Renders the expanded mtv page."""   
 
     return render_template('mtvExpand.html', mtvexpandContent = Mtv.Mtv_Content, mtvexpadTitle = Mtv.Mtv_Title, mtexpandDescription = Mtv.Mtv_Description, mtvexpandImg = Mtv.Mtv_ToImage)
+
+@app.route('/more1')
+def lowerCard_1():
+
+    """Renders the expandeds more detail in first lower card"""   
+
+    return render_template('lowerCard1.html',buzzfeedLowerCardContent = BuzzFeed.BuzzFeed_Content, buzzfeedLowerCardTitle = BuzzFeed.BuzzFeed_Title, buzzfeedLowerCardImg = BuzzFeed.BuzzFeed_ToImage,
+                           buzzfeedlowerCardDes = BuzzFeed.BuzzFeed_Description)
+
+@app.route('/more2')
+def lowerCard_2():
+
+    """Renders the expandeds more detail in first lower card"""   
+
+    return render_template('lowerCard2.html', redditLowerCardContent = Reddit.Reddit_Content, redditLowerCardTitle = Reddit.Reddit_Title, redditLowerCardImg = Reddit.Reddit_ToImage,
+                           redditLowerCardDes = Reddit.Reddit_Description)
