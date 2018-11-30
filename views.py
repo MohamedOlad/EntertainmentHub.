@@ -50,7 +50,7 @@ def home():
                           
                            
 @app.route('/login')
-def hello():
+def loginPage():
     """Renders the home page."""   
 
     return render_template('loginpage.html')
