@@ -122,7 +122,7 @@ def lowerCard_2():
 @app.route('/shows')
 def tv():
 
-    """Renders the expandeds more detail in first lower card"""   
+    """Renders tv/shows page"""   
     
 
 
@@ -130,3 +130,16 @@ def tv():
                            topRated_Name1=TopRatedShows.Shows_1[0], topRated_Overview1 = TopRatedShows.Shows_1[1], topRated_Img1=TopRatedShows.CompiledImage_1,
                            topRated_Name2=TopRatedShows.Shows_2[0], topRated_Overview2 = TopRatedShows.Shows_2[1], topRatedImg2=TopRatedShows.CompiledImage_2,
                            topRated_Name3=TopRatedShows.Shows_3[0], topRated_Overview3 = TopRatedShows.Shows_3[1], topRatedImg=TopRatedShows.CompiledImage_3)
+
+@app.route('/showsecondpage')
+def tv_secondpage():
+
+    """Renders the next show tab from the /shows page"""   
+    
+
+
+    return render_template('showspart2.html', topRated_Name4=TopRatedShows.Shows_4[0], topRated_Overview4 = TopRatedShows.Shows_4[1], topRated_Img4=TopRatedShows.CompiledImage_4,
+                           topRated_Name5=TopRatedShows.Shows_5[0], topRated_Overview5 = TopRatedShows.Shows_5[1], topRatedImg5=TopRatedShows.CompiledImage_5,
+                           topRated_Name6=TopRatedShows.Shows_6[0], topRated_Overview6 = TopRatedShows.Shows_6[1], topRatedImg6=TopRatedShows.CompiledImage_6)
+
+
